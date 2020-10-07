@@ -12,7 +12,7 @@ Describe "League tests" {
             WhoWins -team1 "Other" -team2 "Widzew" | Should -be "Widzew"
         }
         It "should another win" {
-            WhoWins -team1 "Other" -team2 "Widzew" | Should -be "Widzew2"
+            WhoWins -team1 "Other" -team2 "Bazoo" | Should -be "Bazoo"
         }
 
     }
