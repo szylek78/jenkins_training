@@ -11,6 +11,9 @@ Describe "League tests" {
         It "should another win" {
             WhoWins -team1 "Other" -team2 "Widzew" | Should -be "Widzew"
         }
+        It "should another win" {
+            WhoWins -team1 "Other" -team2 "Widzew" | Should -be "Widzew2"
+        }
 
     }
 }
