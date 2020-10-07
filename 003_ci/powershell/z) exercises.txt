@@ -1,0 +1,4 @@
+1) Write invalid new test, then fix a test, see what is in jons runs
+2) Break the code, see of the test breaks
+3) Make no changes for 2 minutes. Are builds kicking in? Analyze poll log.
+4) Change git poll to run periodically. Are builds kicking in ?

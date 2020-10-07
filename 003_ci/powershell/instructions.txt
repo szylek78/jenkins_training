@@ -1,4 +1,6 @@
-1. Create New Item
+That is the simplest way of getting the developer experience - heart of CI
+
+1. Create New Item -> Freestyle Job
 2. Git -> Repository URL = https://github.com/gabrielstar/jenkins_training
 3. Build -> Build Step -> PowerShell:
     Invoke-Pester -Path 003_ci/powershell/app.Tests.ps1 -OutputFile 003_ci/powershell/TEST.xml -OutputFormat 'NUnitXml'
@@ -11,3 +13,7 @@
 5. Install plugin "NUnit"
 5. Post-build Actions -> Publish NUnit test results report:
     003_ci/powershell/TEST.xml
+
+6. Build Triggers -> Poll SCM
+    * * * * *
+

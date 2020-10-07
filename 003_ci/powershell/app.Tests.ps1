@@ -14,6 +14,9 @@ Describe "League tests" {
         It "should another win" {
             WhoWins -team1 "Other" -team2 "Bazoo" | Should -be "Bazoo"
         }
+        It "should Legia win on seconds place" {
+            WhoWins -team1 "Other" -team2 "Legia" | Should -be "Legia"
+        }
 
     }
 }
