@@ -1,6 +1,6 @@
-function WhoWins($team1,$team2){
-    If($team1 -eq "Legia"){
-        return $team1
+function Select-Winner($Team1,$Team2){
+    If($Team1 -eq "Legia"){
+        return $Team1
     }
-    return $team2
+    return $Team2
 }

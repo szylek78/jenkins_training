@@ -6,16 +6,16 @@ Describe "League tests" {
     }
     Context "When teams play a game" {
         It "should Legia win" {
-            WhoWins -team1 "Legia" -team2 "Widzew" | Should -be "Legia"
+            Select-Winner -Team1 "Legia" -Team2 "Widzew" | Should -be "Legia"
         }
         It "should another win" {
-            WhoWins -team1 "Other" -team2 "Widzew" | Should -be "Widzew"
+            Select-Winner -Team1 "Other" -Team2 "Widzew" | Should -be "Widzew"
         }
         It "should another win" {
-            WhoWins -team1 "Other" -team2 "Bazoo" | Should -be "Bazoo"
+            Select-Winner -Team1 "Other" -Team2 "Bazoo" | Should -be "Bazoo"
         }
         It "should Legia win on seconds place" {
-            WhoWins -team1 "Other" -team2 "Legia" | Should -be "Legia"
+            Select-Winner -Team1 "Other" -Team2 "Legia" | Should -be "Legia"
         }
 
     }
