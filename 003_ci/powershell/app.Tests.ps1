@@ -2,7 +2,7 @@
 
 Describe "League tests" {
     BeforeAll{
-        . "$PSScriptRoot\app.ps1" #import script
+        . "$PSScriptRoot\app.ps1" -Force #import script with Force to re-load memory
     }
     Context "When teams play a game" {
         It "should Legia win" {
