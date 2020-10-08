@@ -8,7 +8,7 @@ That is the simplest way of getting the developer experience - heart of CI
 4. Build -> Build Step -> PowerShell
 
     . "$ENV:WORKSPACE\003_ci\powershell\app.ps1"
-    WhoWins -team1 "Legia" -team2 "Widzew"
+    Select-Winner -Team1 "$env:Team1" -Team2 "$env:Team2"
 
 5. Install plugin "NUnit"
 5. Post-build Actions -> Publish NUnit test results report:

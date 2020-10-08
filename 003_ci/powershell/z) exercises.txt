@@ -2,3 +2,6 @@
 2) Break the code, see of the test breaks
 3) Make no changes for 2 minutes. Are builds kicking in? Analyze poll log.
 4) Change git poll to run periodically. Are builds kicking in ?
+5) Add parameters to the buidl and use in the second step:
+    Select-Winner -Team1 "$env:Team1" -Team2 "$env:Team2"
+6) Go to .jenkins folder, make a change in config.xml file for the build, reload configuration, is change accepted?
