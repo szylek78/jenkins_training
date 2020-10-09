@@ -16,5 +16,13 @@ Describe 'Tools tests'{
             $java = Get-Command java | Select-Object Version
             $java | Should -Match "8.0.*"
         }
+        it 'should have git 2.28.*' {
+            $git = Get-Command git | Select-Object Version
+            $git | Should -Match "2.28.*"
+        }
+        it 'should have maven 3.6.*' {
+            $mvn = (mvn --version) | Out-String
+            $mvn | Should -Match "Apache Maven 3.6.*"
+        }
     }
 }
