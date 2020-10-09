@@ -1,0 +1,7 @@
+1. Add Post-Build action to Publish Test results (JUnit)
+   **/*TEST*xml
+
+2. Make a change in tests and/or code
+3. Set up poll trigger
+
+4. Take up maven project and refactor as for powershell but start with your own repo first

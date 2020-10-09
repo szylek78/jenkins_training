@@ -1,0 +1,18 @@
+1. Fork on github from https://github.com/gabrielstar/game-of-life.git
+2. New-Item ci_maven, free style job
+3. No build triggers for now
+Build ->Build Step -> Invoke Top-level maven target
+   install
+
+Run - it will run build, tets, package, install
+
+4. Add deploy (jetty).
+
+Build ->Build Step -> Invoke Top-level maven target
+   jetty:run
+
+Run build, it should start the server now, go to http://localhost:9090/
+Kill job now, remove the step.
+
+
+CI workflow stop.
