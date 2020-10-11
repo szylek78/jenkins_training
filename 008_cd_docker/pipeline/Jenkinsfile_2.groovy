@@ -9,6 +9,11 @@ pipeline {
 
     stages {
 
+        stage("Unit tests"){
+            steps {
+                runUnittests()
+            }
+        }
         stage("Build Docker Image") {
             steps {
                 buildApp()
@@ -74,5 +79,5 @@ def runUnittests() {
 
 
 def runUAT(port) {
-    pwsh "Invoke-WebRequest `-Uri http://localhost:$port"
+    pwsh "Invoke-WebRequest `-Uri http://localhost:${port}"
 }
