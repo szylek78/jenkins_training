@@ -79,5 +79,5 @@ def runUnittests() {
 
 
 def runUAT(port) {
-    pwsh "Invoke-WebRequest `-Uri http://localhost:${port}"
+    pwsh "Invoke-WebRequest -Uri http://localhost:${port}"
 }
