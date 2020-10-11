@@ -17,7 +17,7 @@ pipeline {
 
         stage("Deploy - Dev") {
             steps {
-                deploy('dev')
+                deploy('dev',88)
             }
         }
 
@@ -32,14 +32,14 @@ def buildApp() {
     }
 }
 
-def deploy(environment) {
+def deploy(environment, int port) {
 
     def containerName = ''
     def port = ''
 
     if ("${environment}" == 'dev') {
         containerName = "app_dev"
-        port = "8888"
+        port = port
     }
     else {
         println "Environment not valid"
