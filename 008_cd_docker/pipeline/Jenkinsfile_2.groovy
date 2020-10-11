@@ -48,7 +48,7 @@ def deploy(environment, int port) {
 
     def containerName = ''
 
-    if (['dev','stage'].contains("$environment")) {
+    if ("$environment" =='dev' || "$environment" == 'stage') {
         containerName = "app_${environment}"
     }
     else {
