@@ -46,8 +46,12 @@ def deploy(environment) {
         System.exit(0)
     }
 
-    pwsh "docker stop $containerName" || true
-    pwsh "docker docker rm $containerName" || true
+    try {
+        pwsh "docker stop $containerName"
+        pwsh "docker docker rm $containerName"
+    }catch(def e){
+        pwsh "Write-Host 'nothing deleted'"
+    }
     pwsh "docker run `-d `-p ${port}:5000 `--name ${containerName} cicd/app:${env:BUILD_NUMBER}"
 
 }
