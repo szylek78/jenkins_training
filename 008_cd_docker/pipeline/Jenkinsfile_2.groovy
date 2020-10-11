@@ -73,11 +73,12 @@ def deploy(environment, int port) {
 }
 
 def runUnittests() {
+    pwsh "$env:PYTHONPATH=./008_cd_docker/app/"
     pwsh "pip install --no-cache-dir -r ./008_cd_docker/app/requirements.txt"
     pwsh "python ./008_cd_docker/app/tests/test_flask_app.py"
 }
 
 
 def runUAT(port) {
-    pwsh "Invoke-WebRequest -Uri http://localhost:${port}"
+    pwsh "Invoke-WebRequest -Uri http://localhost:${env:port}"
 }
