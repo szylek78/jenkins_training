@@ -45,8 +45,8 @@ def deploy(environment, int port) {
     }
 
     try {
-        pwsh "docker stop $containerName"
-        pwsh "docker docker rm $containerName"
+        pwsh "docker container stop $containerName"
+        pwsh "docker container rm $containerName"
     }catch(def e){
         pwsh "Write-Host 'nothing deleted'"
     }
