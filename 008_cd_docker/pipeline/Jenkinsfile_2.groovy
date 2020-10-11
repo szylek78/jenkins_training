@@ -73,9 +73,9 @@ def deploy(environment, int port) {
 }
 
 def runUnittests() {
-    dir('008_cd_docker') {
-        pwsh "pip install -r .\\app\\requirements.txt"
-        pwsh "python .\\app\\tests\\test_flask_app.py"
+    dir('008_cd_docker/app/tests') {
+        pwsh "pip install -r .\\..\\requirements.txt"
+        pwsh "python .\\test_flask_app.py"
     }
 }
 
