@@ -53,7 +53,8 @@ def deploy(environment, int port) {
     }
     else {
         println "Environment not valid"
-        System.exit(0)
+        currentBuild.result = 'ABORTED'
+        error('Stopping early…')
     }
 
     try {
