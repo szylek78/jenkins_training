@@ -48,7 +48,7 @@ def deploy(environment) {
 
     pwsh "docker stop $containerName" || true
     pwsh "docker docker rm $containerName" || true
-    pwsh "docker run `-d `-p ${port}:5000 `--name ${containerName} cicd/app:${BUILD_NUMBER}"
+    pwsh "docker run `-d `-p ${port}:5000 `--name ${containerName} cicd/app:$env:BUILD_NUMBER"
 
 }
 
