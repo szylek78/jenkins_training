@@ -1,0 +1,19 @@
+Declarative pipeline for CD (Continuous deployment)
+
+Python web app
+Docker
+Multiple environments
+ dev : 8888
+ stage: 88
+ prod: 80
+
+- checkout
+- build
+- test:unit
+- deploy: dev
+- tests:uat:dev
+- deploy:stage
+- tests:uat:stage
+- manual approve
+- deploy:prod
+- tests: uat prod

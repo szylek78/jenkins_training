@@ -10,7 +10,7 @@ Describe 'Tools tests'{
             $docker | Should -Match "19.*"
         }
         it 'should have powershell 5' {
-            $pwsh = (Get-Host).version.major | Out-String
+            $pwsh = $PSVersionTable.PSVersion.major | Out-String
             $pwsh | Should -Match "5.*"
         }
         it 'should have java 8' {

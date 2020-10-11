@@ -1,0 +1,49 @@
+Theory:
+   Describe need for notifications.
+   Types of notifications.
+   Display sources.
+   Channel based.
+
+Email set-up in Jenkins with gmail
+
+   - https://medium.com/@pradeep.sg406/how-to-configure-email-notification-in-jenkins-227b58d3c017
+   - turn less secure apps on: https://myaccount.google.com/lesssecureapps then fill in details:
+
+      http://localhost:8080/configure
+
+      SMTP server: smtp.gmail.com
+      Use SMTP Authentication: yes
+      Username: my.user@gmail.com
+      Password:
+      Port: 465
+
+
+1) Email notifications
+
+   a) Go to any job -> Post-Build actions -> Email notifications
+      break build
+      fix build
+   b)  Go to any job -> Post-Build actions -> Editable Email notifications
+      Go to :
+          http://localhost:8080/configure
+       Define smtp server details separately as well as default reciepien list.
+       set trigger to always
+       add compressed build log
+
+2) Extreme feedback devices - build monitor view
+
+   Go to http://localhost:8080/pluginManager/
+   Install Build Monitor View
+   Go to Main Page -> Add new view of type Build Monitor View , regex: ci.*
+
+3) Slack notifcations
+
+    1. Create slavck workspace
+    2. Creat a channel called jenkins
+    3. In Chrome head to my.slack.com/services/new/jenkins-ci , choose chanell to #jenkins
+    4. Follow the instruction install Slack Notification, url, channel #jenkins, add secret as secret text
+    5. Test
+
+    Now, go to any build and add Post-Build actions -> Slack Notification, run build and check it
+
+ need slack accounts.

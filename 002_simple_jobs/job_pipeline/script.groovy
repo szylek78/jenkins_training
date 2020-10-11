@@ -1,3 +1,4 @@
+#!groovy
 node('master'){
     stage('groovy'){
         print "groovy yummy ..."
@@ -6,4 +7,8 @@ node('master'){
     stage('pwsh'){
         pwsh 'Write-Host "hello form pwsh"'
     }
+    stage('pwsh'){
+        
+    }
+
 }
