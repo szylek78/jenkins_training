@@ -48,8 +48,8 @@ def deploy(environment, int port) {
 
     def containerName = ''
 
-    if ("${environment}" == 'dev') {
-        containerName = "app_dev"
+    if ("${environment}" in ['dev','stage']) {
+        containerName = "app_${environment}"
     }
     else {
         println "Environment not valid"
