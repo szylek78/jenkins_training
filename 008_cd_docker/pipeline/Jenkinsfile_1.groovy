@@ -35,11 +35,9 @@ def buildApp() {
 def deploy(environment, int port) {
 
     def containerName = ''
-    def port = ''
 
     if ("${environment}" == 'dev') {
         containerName = "app_dev"
-        port = port
     }
     else {
         println "Environment not valid"
