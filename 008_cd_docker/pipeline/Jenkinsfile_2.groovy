@@ -73,9 +73,10 @@ def deploy(environment, int port) {
 }
 
 def runUnittests() {
-    pwsh "$env:PYTHONPATH=./008_cd_docker/app/"
-    pwsh "pip install --no-cache-dir -r ./008_cd_docker/app/requirements.txt"
-    pwsh "python ./008_cd_docker/app/tests/test_flask_app.py"
+    dir('008_cd_docker') {
+        pwsh "pip install -r .\\app\\requirements.txt"
+        pwsh "python .\\app\\tests\\test_flask_app.py"
+    }
 }
 
 
