@@ -17,3 +17,29 @@ Multiple environments
 - manual approve
 - deploy:prod
 - tests: uat prod
+
+Manually:
+
+
+1. Configure python for module or run with python directly:
+
+  python.exe .\app\app.py
+
+2. Go through the app code
+
+3. Build image
+    cd app
+    docker build -t cicd/app .
+4. Run it locally (deploy)
+    docker container run -p 5000:5000 --name cats cicd/app
+5. Stop it
+    docker container stop cats
+    docker container remove cats
+
+6. Test - UNIT
+
+    PS ..\008_cd_docker\app> $env:PYTHONPATH=$PWD //included our app to import
+    PS ..\008_cd_docker\app> python.exe .\tests\test_flask_app.py
+
+
+Via pipeline:
