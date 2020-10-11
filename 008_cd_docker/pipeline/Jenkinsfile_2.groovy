@@ -21,6 +21,18 @@ pipeline {
             }
         }
 
+        stage("Test - UAT Dev") {
+            steps { runUAT(88) }
+        }
+
+        stage("Deploy - Stage") {
+            steps { deploy('stage',8888) }
+        }
+
+        stage("Test - UAT Stage") {
+            steps { runUAT(8888) }
+        }
+
     }
 }
 
@@ -54,3 +66,12 @@ def deploy(environment, int port) {
 
 }
 
+def runUnittests() {
+    pwsh "pip install --no-cache-dir -r ./008_cd_docker/app/requirements.txt"
+    pwsh "python ./008_cd_docker/app/tests/test_flask_app.py"
+}
+
+
+def runUAT(port) {
+    print("test on $port")
+}
