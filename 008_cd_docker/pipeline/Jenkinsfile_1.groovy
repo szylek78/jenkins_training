@@ -27,7 +27,7 @@ pipeline {
 
 // steps
 def buildApp() {
-    dir ('008_cd_docker/pipeline' ) {
+    dir ('008_cd_docker/app' ) {
         pwsh 'docker build -t cicd/app:${BUILD_NUMBER} .'
     }
 }
