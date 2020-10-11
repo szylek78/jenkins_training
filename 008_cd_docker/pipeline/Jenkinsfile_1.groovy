@@ -17,7 +17,7 @@ pipeline {
 
         stage("Deploy - Dev") {
             steps {
-                //deploy('dev')
+                deploy('dev')
             }
         }
 
@@ -28,7 +28,7 @@ pipeline {
 // steps
 def buildApp() {
     dir ('008_cd_docker/pipeline' ) {
-        pwsh 'docker build `-t hands-on-jenkins/myapp:${BUILD_NUMBER} .'
+        pwsh 'docker build `-t cicd/app:${BUILD_NUMBER} .'
     }
 }
 
@@ -46,9 +46,9 @@ def deploy(environment) {
         System.exit(0)
     }
 
-    sh "docker ps -f name=${containerName} -q | xargs --no-run-if-empty docker stop"
-    sh "docker ps -a -f name=${containerName} -q | xargs -r docker rm"
-    sh "docker run -d -p ${port}:5000 --name ${containerName} hands-on-jenkins/myapp:${BUILD_NUMBER}"
+    pwsh "docker stop $containerName" || true
+    pwsh "docker docker rm $containerName" || true
+    pwsh "docker run `-d `-p ${port}:5000 `--name ${containerName} cicd/app:${BUILD_NUMBER}"
 
 }
 
