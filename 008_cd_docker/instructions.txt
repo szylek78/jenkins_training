@@ -18,6 +18,11 @@ Multiple environments
 - deploy:prod
 - tests: uat prod
 
+Docker
+
+    Explain we can incoke all teh commands in the container, from
+    docker run -it alpine:3.7 sh
+
 Manually:
 
 
