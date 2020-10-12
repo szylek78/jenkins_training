@@ -1,0 +1,4 @@
+1. Install plugin JobDSL
+2. Create FreestyleJob
+   Add Git -> Build -> Process JobDSL
+   Look on disk
