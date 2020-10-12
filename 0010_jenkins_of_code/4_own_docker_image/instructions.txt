@@ -1,0 +1,9 @@
+Use the knowledge to build your own docker image with all plugins, a job and a hook
+turnoff .war jenkins
+
+#no-cache is to avoid using old layers
+
+docker build --no-cache -t gabrielstar/myjenkins .
+docker run --name jen -p 8081:8080 -p 50000:50000 gabrielstar/myjenkins
+
+Verify that the build is there, plugins too, hook has been executed

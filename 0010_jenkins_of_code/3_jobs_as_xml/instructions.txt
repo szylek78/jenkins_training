@@ -1,0 +1,5 @@
+go to $JENKINS_HOME
+copy one of the jobs, change name
+remove all contents from folder save by config.xml
+restart Jenkins
+See new job appears

@@ -1,1 +1,6 @@
 https://www.jenkins.io/doc/book/managing/groovy-hook-scripts/
+
+Go to $JENKINS_HOME
+Mkdir init.groovy.d
+Copy hook.groovy there
+Restart Jenkins

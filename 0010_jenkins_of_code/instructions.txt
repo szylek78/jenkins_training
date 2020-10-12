@@ -1,5 +1,2 @@
-
-Go to https://github.com/gabrielstar/tenkins
-Clone
-Explain contents.
-run jenkins-up-win10.sh
+1. Mention DSL and seeding, Jenkins pipelines of code, CLI, API calls
+2. Additional items

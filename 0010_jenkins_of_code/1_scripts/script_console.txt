@@ -1,2 +1,6 @@
+
+Manage Jenkins -> Script Console
+
+
 use) https://www.jenkins.io/doc/book/managing/script-console/
 develop with ide) https://www.mdoninger.de/2011/11/07/write-groovy-scripts-for-jenkins-with-code-completion.html

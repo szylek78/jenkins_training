@@ -1,11 +1,11 @@
-1. Install plugin JobDSL
+1. Install plugin JobDSL (Explain What Jon DSL is)
 
 MANUAL:
 
-New Item -> Multibranch pipeline
-GitHub -> https://github.com/gabrielstar/jenkins_training.git
-Leave behaviours default
-Save & Run
+    New Item -> Multibranch pipeline
+    GitHub -> https://github.com/gabrielstar/jenkins_training.git
+    Leave behaviours default
+    Save & Run
 
 SEED/AUTOMATED
 
@@ -17,8 +17,11 @@ SEED/AUTOMATED
         branchSources {
             github {
                 id('cicd') // IMPORTANT: use a constant and unique identifier
-                repository('gabrielstar/jenkins_training')
+                repoOwner('gabrielstar')
+                repository('jenkins_training')
                 includes('*')
             }
         }
     }
+
+If running into issues, Manage Jenkins -> Configure -> GitHub -> Never Check quota
