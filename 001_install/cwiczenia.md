@@ -1,7 +1,7 @@
 ### docker
 
 1. 
-    Uruchom jenkinsa z dockera a następnie użyj konsoli wbudowanej w docker Desktop aby podlaczyc się do terminala kontenera.
+    Uruchom jenkinsa z dockera a następnie użyj konsoli wbudowanej w Docker Desktop aby podlaczyc się do terminala kontenera.
     Wyświetl proces jenkinsa wykonując polecenie 
        
       ``ps -aux``
@@ -11,7 +11,7 @@
     
     `` docker exec -it jenkins /bin/bash``
     
-    A następnie przejdź do folderu domeowego jenkinsa poleceniem
+    A następnie przejdź do folderu domowego jenkinsa poleceniem
     
    `` cd /var/jenkins_home`` i wyświetl jego zawartość
    
