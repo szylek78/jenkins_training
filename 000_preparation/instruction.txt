@@ -1,0 +1,5 @@
+1) On project root -> Right Click -> Open Module Settings ->
+    -> Set project SDK to 1.8
+    -> Set module JDK to 1.8
+        -> Add Python
+        -> Add Groovy
