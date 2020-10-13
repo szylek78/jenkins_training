@@ -40,4 +40,5 @@
     `` ls ``
     
 3. Zainstaluj wybrany plugin w Jenkinsie e.g. Powershell i zanalizuj zawartośc folderu <b>plugins</b> w katalogu domowym jenkinsa
+4. Wykonaj kopię pliku jenkins.war. Zmień rozszerzenie pliku na zip i rozpakuj, co jest w środku?
    
