@@ -11,6 +11,9 @@ a następnie uruchamiając kontener:
 
 ----
 
+Jenkins jest gotowy pod adresem: http://localhost:8080/
+
+
 Aby uruchomić Jenkinsa w trybie 'detached' użyj:
 
 ```docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -e JAVA_OPTS="-Djenkins.install.runSetupWizard=false" jenkins/jenkins:lts``` 
