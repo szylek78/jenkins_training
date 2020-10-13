@@ -10,5 +10,4 @@ node('master'){
     stage('pwsh'){
         
     }
-
 }
