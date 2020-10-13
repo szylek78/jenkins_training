@@ -39,5 +39,5 @@
     
     `` ls ``
     
-3. Zainstaluj wybrany plugin w Jenkinsie e.g. Powershell i zanalizuj zawartośc folderu plugins w katalogu domowym jenkinsa
+3. Zainstaluj wybrany plugin w Jenkinsie e.g. Powershell i zanalizuj zawartośc folderu <b>plugins</b> w katalogu domowym jenkinsa
    
