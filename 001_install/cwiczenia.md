@@ -16,21 +16,28 @@
    `` cd /var/jenkins_home`` i wyświetl jego zawartość
    
    `` ls -alh``
+   
+3. Rozszerz komendę uruchomieniową (https://github.com/jenkinsci/docker/blob/master/README.md) o 
 
-War:
-
-    1) Stop jenkins, run it on another port ? Can this be done? Check
-    2) Go to jenkins home directory
-        cd ~
-        cd .\jenkins
-        cd plugins
-
-        Install a plugin, verify it exists in the jenkins directory.
-
-Docker:
-    1) Use Windows Docker Console and navigate to jenkins home directory, what is inside?
-    2) Explore docker container logs
-    3) Install any plugin, stop the container, start the container, are changes preserved ?
-    4) Pick on extrac dockerparamerer and run https://github.com/jenkinsci/docker/blob/master/README.md
+    ``-e JAVA_OPTS="-Djenkins.install.runSetupWizard=false -Dhudson.footerURL=http://mycompany.com "``
     
---env JAVA_OPTS=-Dhudson.footerURL=http://mycompany.com
+    I zweryfikuj zmianę - link na dole strony startowej jenkinsa powien prowadzić do http://mycompany.com.
+    
+
+### WAR
+
+1. 
+    Uruchom jenkinsa na porcie innym niż domyślny. Zweryfikuj zmianę.
+    
+2. 
+    
+    Przejdź do katalogu domowego jenkinsa w konsoli powershell, domyślnie
+    
+    `` cd ~ ``
+    
+    `` cd .\jenkins`` i wyświetl zawartość
+    
+    `` ls ``
+    
+3. Zainstaluj wybrany plugin w Jenkinsie e.g. Powershell i zanalizuj zawartośc folderu plugins w katalogu domowym jenkinsa
+   

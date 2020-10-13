@@ -1,19 +1,17 @@
-Start with:
+### Instalacja Jenkinsa z paczki WAR (Web Archive)
+
+Wersja WAR może zostać zainstalowana na dowolnym systemie operacyjnym wspierającym JAVE. 
+Aby zainstalować Jenkinsa z paczki WAR (https://www.jenkins.io/doc/book/installing/#war-file) należy ją pobrać z adresu  https://www.jenkins.io/download/
 
 
-Windows 10 machine with:
+Następnie uruchom jenkinsa poleceniem:
 
-    + docker 19.x
-    + python 3.7.x
-    + powershell 5.1.x
-    + java 1.8
+``java -jar .\jenkins.war``
 
-Then install jenkins LTS from .war file https://www.jenkins.io/download/
-Run by 
-
-     java -jar .\jenkins.war --httpPort=9090
+Jenkins będzie dostępny pod adresem http://localhost:8080
      
-Install plugin
-	
-    PowerShell plugin 1.4
-    
+Aby zmienić port, na którym uruchomi się jenkins użyj polecenia:
+
+``java -jar jenkins.war --httpPort=9090``
+
+Jenkins będzie dostępny pod adresem http://localhost:8080
