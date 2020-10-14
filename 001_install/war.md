@@ -8,6 +8,8 @@ Następnie uruchom jenkinsa poleceniem:
 
 ``java -jar .\jenkins.war``
 
+Wprowadź pierwsze haslo administratora <b>jenkins:jenkins</b> a następnie zainstaluj sugerowane pluginy.
+
 Jenkins będzie dostępny pod adresem http://localhost:8080
      
 Aby zmienić port, na którym uruchomi się jenkins użyj polecenia:
