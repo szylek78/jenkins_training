@@ -7,7 +7,7 @@ Uwaga: Wykonaj ćwiczenie w folderze 003/cwiczenia. Jesli nie istnieje, utworz g
 1. 
     Do folderu 003_ci/cwiczenia/powershell skopiuj zawartośc folderu ze skryptami 003/powershell
     
-    Skonfiguruj projekt w jenkinsie, repozytorium i SCM polling uwzgledniajac nowe sciezki.     
+    Skonfiguruj projekt w Jenkinsie, repozytorium i Build trigger (Cron lub polling) uwzgledniajac nowe sciezki.     
     Wykonaj kilka zmian, celowo psując i naprawiając kod.
 
 2. 
