@@ -7,3 +7,11 @@ Theory:
 2. Make a change in tests and/or code
 3. Set up poll trigger
 4. Take up maven project and refactor as for powershell but start with your own repo first
+
+
+For powershell
+
+5. Install plugin "NUnit"
+5. Post-build Actions -> Publish NUnit test results report:
+    003_ci/powershell/TEST.xml
+

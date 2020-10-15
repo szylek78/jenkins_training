@@ -10,9 +10,7 @@ That is the simplest way of getting the developer experience - heart of CI
     . "$ENV:WORKSPACE\003_ci\powershell\app.ps1"
     Select-Winner -Team1 "$env:Team1" -Team2 "$env:Team2"
 
-5. Install plugin "NUnit"
-5. Post-build Actions -> Publish NUnit test results report:
-    003_ci/powershell/TEST.xml
+
 
 6. Build Triggers -> Poll SCM
     * * * * *
