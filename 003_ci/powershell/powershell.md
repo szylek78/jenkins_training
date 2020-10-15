@@ -20,13 +20,11 @@ Aby przetestować nasz skrypt użyj polecnia
 
 Uwaga: Wykonaj ćwiczenie na jenkinsie w folderze 003. Stworz go jeśli nie istnieje.
 
-Aby stworzyć projekt typu freestyle, otwórz Jenkinsa http://localhost:8080/, następnie w gównym menu 
     
     New Item ->
         -> Wprowadź nazwę 'ci_powershell'
         -> Zaznacz 'freestyle' project
         -> Kliknij OK
-            -> Kliknij Save
             
 Następnie dodajmy repozytorium, z którego skorzystamy w projekcie
 
@@ -36,7 +34,7 @@ Następnie dodajmy repozytorium, z którego skorzystamy w projekcie
         -> Build -> Add Build Step -> PowerShell
             -> Command:
                     . "$ENV:WORKSPACE\003_ci\powershell\app.ps1"
-                    Select-Winner -Team1 "Legia" -Team2 "Karanach Agdam"
+                    Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"
 
 I skonfigurujmy częstotliwośc pytania o zmiany w repozytorium
 
@@ -44,4 +42,6 @@ I skonfigurujmy częstotliwośc pytania o zmiany w repozytorium
         -> Schedule:
             * * * * *
  
- Obserwuj 'Git Polling Log'.
+ Obserwuj 'Git Polling Log'. Wykonaj zmianę? Czy coś się zmienilo? Wprowadź celowo blad i zrób 'commit'.
+ 
+ Dla wygody komenda wyjorzystan w instrukcji znajduje się w pliku <i>003_ci/powershell/command.ps1</i>
