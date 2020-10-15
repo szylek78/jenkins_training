@@ -17,6 +17,14 @@ Uwaga: Wykonaj ćwiczenie w folderze 003/cwiczenia. Jesli nie istnieje, utworz g
    
    Skomituj zmiany do repozytorium a następnie skonfiguruj joba w jenkinsie dla tego projektu (003/cwiczenia/maven).
    
-   a) Wykorzystaj do uruchomienia Build Step -> Powershell
-   b) Wykorzystaj do uruchomienia Build Step -> Invoke top-level Maven targets
-   c) Wykonaj kilka zmian celowo psując i naprawiając kod.
+   - Wykorzystaj do uruchomienia Build Step -> Powershell
+   - Wykorzystaj do uruchomienia Build Step -> Invoke top-level Maven targets
+   - W Additional Behaviours -> Sparse Checkout Paths, wpisz 003_ci/cwiczenia/maven
+   - Wykonaj kilka zmian celowo psując i naprawiając kod, za kazdym razem puszczajac build.
+   
+   
+3. 
+    Dla sforkowanego game-of-life,  
+        w gameoflife-core/src/main/java/com/wakaleo/gameoflife/domain/Cell.java
+        zamień LIVE_CELL("*") na LIVE_CELL("+")
+    Uruchom build 003/ci_java, po buildzie cofnij zmianę i ponownie uruchom.
