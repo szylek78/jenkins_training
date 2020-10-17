@@ -1,4 +1,4 @@
-### CI na przykladzie mavena i JAVY
+### Wprowadzenie do narzędzi do budowania aplikacji na przykladzie mavena 
 
 ### Czym jest maven ?
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
@@ -31,6 +31,7 @@ Wykonaj testy klikając prawym przyciskiem na klasę testów AppTest a następni
 
 #### Jenkins i maven
 
+(Opcjonalnie)
 Aby stworzyć dynamicznie projekt mavenowy, wykonać testy i pozostale fazy mavena a na końcu uruchomić aplikację stwórzmy projekt typu freestyle.
 
     

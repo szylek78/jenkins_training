@@ -1,11 +1,11 @@
-### Cwiczenia - 004
+### Cwiczenia - 003
 
 Uwaga: Wykonaj ćwiczenie w folderze 003/cwiczenia. Jesli nie istnieje, utworz go.
 
 ### Ci dla projektów w Powershellu i Maven/JAVA
 
 1. 
-    Do folderu 003_ci/cwiczenia/powershell skopiuj zawartośc folderu ze skryptami 003/powershell
+    Do folderu 003_ci/cwiczenia/powershell skopiuj zawartośc folderu ze skryptami 003_ci/powershell
     
     Skonfiguruj projekt w Jenkinsie, repozytorium i Build trigger (Cron lub polling) uwzgledniajac nowe sciezki.     
     Wykonaj kilka zmian, celowo psując i naprawiając kod.
@@ -21,7 +21,6 @@ Uwaga: Wykonaj ćwiczenie w folderze 003/cwiczenia. Jesli nie istnieje, utworz g
    - Wykorzystaj do uruchomienia Build Step -> Invoke top-level Maven targets
    - W Additional Behaviours -> Sparse Checkout Paths, wpisz 003_ci/cwiczenia/maven
    - Wykonaj kilka zmian celowo psując i naprawiając kod, za kazdym razem puszczajac build.
-   
    
 3. 
     Dla sforkowanego game-of-life,  
