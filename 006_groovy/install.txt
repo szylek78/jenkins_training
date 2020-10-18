@@ -1,1 +1,0 @@
-http://groovy-lang.org/install.html#SDKMAN
