@@ -1,6 +1,6 @@
 ### Cwiczenia - 004
 
-Uwaga: Wykonaj ćwiczenie w swoim repozytorium w folderze 004/cwiczenia. Jesli nie istnieje, utworz go.
+Uwaga: Na jenkinsie wykonaj ćwiczenie w swoim repozytorium w folderze 004/cwiczenia. Jesli nie istnieje, utworz go.
 
 ### Ci dla projektów w Powershellu i Maven/JAVA
 

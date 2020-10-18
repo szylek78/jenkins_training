@@ -1,6 +1,6 @@
 ### Cwiczenia - 003
 
-Uwaga: Wykonaj ćwiczenie w folderze 003/cwiczenia. Jesli nie istnieje, utworz go.
+Uwaga: Na jenkinsie wykonaj ćwiczenie w folderze 003/cwiczenia. Jesli nie istnieje, utworz go.
 
 ### Ci dla projektów w Powershellu i Maven/JAVA
 
