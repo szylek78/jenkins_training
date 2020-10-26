@@ -6,11 +6,11 @@ Uwaga: Na jenkinsie wykonaj ćwiczenia w folderze 008/cwiczenia. Jesli nie istni
 1. Powershell Job
 
     Spróbuj stworzyć pipeline w repozytorium w katalogu 007_pipelines/cwiczenia/powershell w pliku Jenkinsfile
-    Wykorzystując dokumentację odtwórz nasz CI job dla JAVY. Powinien zawierać stage'e:
+    Wykorzystując dokumentację odtwórz nasz CI job dla Powershella. Powinien zawierać stage'e:
     
     - Test
-    - Import
-    - Run
+    - Import & Run
+    - Publish Tests Results
     
     Na jenkinsie stworz joba, ktory wykorzystuje nasz pipeline w folderze:
     
