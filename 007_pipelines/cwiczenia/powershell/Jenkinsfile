@@ -15,7 +15,7 @@ pipeline {
         stage('Import && Run') {
             steps {
                 dir('003_ci/powershell'){
-                        pwsh '. .\\app.Tests.ps1;Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
+                        pwsh '. .\\app.ps1;Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
                 }
             }
         }
