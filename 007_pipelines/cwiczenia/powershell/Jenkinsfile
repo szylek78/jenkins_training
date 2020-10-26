@@ -8,13 +8,13 @@ pipeline {
         stage('Test') {
             steps {
                 dir('003_ci/powershell'){
-                    pwsh 'Invoke-Pester -Path .\app.Tests.ps1'
+                    pwsh "Invoke-Pester -Path .\\app.Tests.ps1"
                 }
             }
         }
         stage('Import') {
             dir('003_ci/powershell'){
-                    pwsh '. .\app.Tests.ps1'
+                    pwsh '. .\\app.Tests.ps1'
             }
         }
         stage('Run') {
