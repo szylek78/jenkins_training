@@ -22,7 +22,7 @@ pipeline {
         stage('Publish tests results') {
             steps {
                 dir('003_ci/powershell'){
-                    junit '**/Test.xml'
+                         nunit testResultsPattern: '**/Test.xml'
                 }
             }
         }
