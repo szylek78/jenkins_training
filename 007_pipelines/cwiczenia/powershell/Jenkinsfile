@@ -8,22 +8,21 @@ pipeline {
         stage('Test') {
             steps {
                 dir('003_ci/powershell'){
-                    pwsh "Invoke-Pester -OutputFile $ENV:WORKSPACE\\003_ci\\powershell\\Test.xml -OutputFormat NUnitXml -Path .\\app.Tests.ps1"
+                    pwsh "Invoke-Pester -OutputFile .\\Test.xml -OutputFormat NUnitXml -Path .\\app.Tests.ps1"
                 }
             }
         }
-        stage('Import') {
+        stage('Import & Run') {
             steps {
                 dir('003_ci/powershell'){
-                    pwsh '. .\\app.ps1'
+                        pwsh '. .\\app.ps1;Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
                     }
                 }
             }
-        stage('Run') {
+        stage('Publish tests results') {
             steps {
                 dir('003_ci/powershell'){
-                        pwsh 'Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
-                        junit '**/Test.xml'
+                    junit '**/Test.xml'
                 }
             }
         }
