@@ -8,7 +8,7 @@ pipeline {
         stage('Test') {
             steps {
                 dir('003_ci/powershell'){
-                    pwsh "Invoke-Pester -OutputFile $PWD\\Test.xml -OutputFormat NUnitXml -Path .\\app.Tests.ps1"
+                    pwsh "Invoke-Pester -OutputFile 007_pipelines/cwiczenia/powershell/Test.xml -OutputFormat NUnitXml -Path .\\app.Tests.ps1"
                 }
             }
         }
