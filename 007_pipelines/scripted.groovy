@@ -9,7 +9,5 @@ node {
         echo 'Deploying....'
     }
     stage(name: 'Slack'){
-        slackSen
-
     }
 }
