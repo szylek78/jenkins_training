@@ -1,0 +1,27 @@
+pipeline {
+    agent { //https://www.jenkins.io/doc/book/pipeline/syntax/#agent
+        node {
+            label 'boo'
+        }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                dir('003_ci/powershell'){
+                    Invoke-Pester -Path .\app.Tests.ps1
+                }
+            }
+        }
+        stage('Import') {
+            dir('003_ci/powershell'){
+                    . .\app.Tests.ps1
+            }
+        }
+        stage('Run') {
+            dir('003_ci/powershell'){
+                   Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"
+            }
+        }
+
+    }
+}

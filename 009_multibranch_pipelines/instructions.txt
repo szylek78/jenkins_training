@@ -1,4 +1,4 @@
-1. Install plugin JobDSL (Explain What Jon DSL is)
+1. Install plugin JobDSL (Explain What Job DSL is)
 
 MANUAL:
 
