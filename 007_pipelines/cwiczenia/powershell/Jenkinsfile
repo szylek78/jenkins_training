@@ -15,14 +15,14 @@ pipeline {
         stage('Import & Run') {
             steps {
                 dir('003_ci/powershell'){
-                        pwsh '. .\\app.ps1;Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
+                        pwsh '. .\\app.ps1; Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
                     }
                 }
             }
         stage('Publish tests results') {
             steps {
                 dir('003_ci/powershell'){
-                         nunit testResultsPattern: '**/Test.xml'
+                        nunit testResultsPattern: '**/Test.xml'
                 }
             }
         }

@@ -17,7 +17,9 @@ Uwaga: Na jenkinsie wykonaj ćwiczenia w folderze 008/cwiczenia. Jesli nie istni
     008/cwiczenia o nazwie powershell
 
 
-    
+2. Maven Job ?
+
+    Czy zaimplementujesz nasz CI dla mavena ?
     
     
     
