@@ -12,20 +12,12 @@ pipeline {
                 }
             }
         }
-        stage('Import') {
+        stage('Import && Run') {
             steps {
                 dir('003_ci/powershell'){
-                        pwsh '. .\\app.Tests.ps1'
+                        pwsh '. .\\app.Tests.ps1;Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
                 }
             }
         }
-        stage('Run') {
-            steps {
-                dir('003_ci/powershell'){
-                       pwsh 'Select-Winner -Team1 "Legia" -Team2 "Karabach Agdam"'
-                }
-            }
-        }
-
     }
 }
