@@ -1,4 +1,4 @@
-### Email set-up in Jenkins with gmail
+### Email
 
 Te zadania wykonujemy w folderze '005'. Stworz go jeśli nie istnieje.
 Rozszerzymy projekt JAVA, z poprzedniego modulu. Aby ulatwic sobie prace skopiujemy projekt.
@@ -24,7 +24,7 @@ Dodajmy notyfikację do builda:
             -> Recipients: wpisz tutaj swój adres email
         -> Save
 
-Wprowadź zmianę psującą build. Uruchom projekt.
+Wprowadź zmianę psującą build(np zamiast install wpisz installl) . Uruchom projekt.
 Jeśli w logach jest bląd:
 
     ERROR: Couldn't connect to host, port: localhost, 25; timeout 60000

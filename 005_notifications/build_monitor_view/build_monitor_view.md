@@ -1,4 +1,4 @@
-### Email set-up in Jenkins with gmail
+### Widok Projektów i Buildów
 
 Te zadania wykonujemy w folderze '005'. Stworz go jeśli nie istnieje.
 
@@ -12,7 +12,7 @@ Następnie w glownym oknie http://localhost:8080/
         -> OK
         -> W sekcji 'Job Filters'
             -> Zaznacz 'Recurse in sub-folders' 
-            -> Zaznacz wszystkie zaczynające się od '005'
+            -> Zaznacz wszystkie zaczynające się od '004'
         -> OK
         
 Przenalizuj opcje widoku.

@@ -36,6 +36,9 @@ Przydatne polecenia:
 
 `` docker exec -it jenkins /bin/bash`` - nawiązuje polaczenie z terminalem uruchomionego kontenera
 
+`` docker image rm jenkins/jenkins:lts `` - usuwa obraz z dysku 
+
+
 ---
 
 Aby zamontować kontener z wolumenem, można użyc:

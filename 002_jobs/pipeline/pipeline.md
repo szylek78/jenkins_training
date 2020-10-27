@@ -15,7 +15,6 @@ Następnie w widoku joba kliknij:
     Configure ->
         -> W sekcji Pipeline -> Definition-> Pipeline Script
             -> Wpisz w polu Script:
-                #!/usr/bin/groovy
                 node('master'){
                     stage('groovy'){
                         print "stage groovy"
@@ -26,8 +25,9 @@ Następnie w widoku joba kliknij:
                 }
         -> Kliknij Save
 
-Dla ulatwienie zawartość tego pola jest w pliku <i>002_jobs/pipeline/script1.groovy</i>
+Dla ulatwienia zawartość tego pola jest w pliku <i>002_jobs/pipeline/script1.groovy</i>
 Aby uruchomić joba, kliknij Build Now.
+
 -----
 
 #### Parametryzowanie jobów
@@ -40,7 +40,6 @@ Wyedytuj projekt:
                 -> name: message, default value: message
         -> W sekcji Pipeline -> Definition-> Pipeline Script
             -> Wpisz w polu Script:
-               #!/usr/bin/groovy
                node('master'){
                    stage('groovy'){
                        print "stage groovy"

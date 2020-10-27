@@ -13,7 +13,8 @@ Uwaga: Na jenkinsie wykonaj ćwiczenie  w folderze 005/cwiczenia. Jesli nie istn
             -> Save
     
     Następnie w ostatnim kroku dodaj do Post-build actions 'Editable Email Notification'.
-    Skonfiguruj jenkinsa http://localhost:8080/configure. Wlacz 'Attach Build Log'.
+    W Advanced skonfiguruj powiadomienia na 'always' 
+    Skonfiguruj jenkinsa http://localhost:8080/configure. Wlacz 'Attach Build Log'. Ustaw Default Recipient.
     Zmodyfikuj przykladowa wartosc domyslna.
     
     

@@ -10,14 +10,22 @@ Aby stworzyć projekt typu freestyle, otwórz Jenkinsa http://localhost:8080/, n
         -> Kliknij OK
             -> Kliknij Save
 
-Następnie w widoku joba kliknij:
+Zacznijmy od stworzenia danych do autentykacji:
+
+    Manage Jenkins -> Credentials -> System -> Global credentials -> Add credentials
+            -> Username with password
+            -> Username: jenkins
+            -> Password: jenkins
+            -> ID: jenkins
+        -> OK
+ 
+Następnie w widoku joba zlinkujemy dane do autentykacji ze zmienna środowiskową:
 
     Configure ->
-        -> This project is parametrized -> Add Parameter -> Credentials
-            -> Name: creds, Credentials Type: Username with Password
-            -> Default Value -> Add -> Jenkins 
-                -> Ustaw username i password na jenkins:jenkins
-            -> Ustaw Default Value na jenkins/**** 
+        -> W sekcji Build Environment -> Bindings-> Add -> Username & Password (conjoined)
+            -> Wpisz:
+                -> Variable: creds
+                -> wybierz wczesniej stworzona pare User/Password
         -> W sekcji Build -> Add Build Step -> Powershell
             -> Wpisz w polu Command:
                Write-Host "$env:creds"

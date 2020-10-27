@@ -1,4 +1,4 @@
-### Email set-up in Jenkins with gmail
+### Slack
 
 Te zadania wykonujemy w folderze '005'. Stworz go jeśli nie istnieje.
 Rozszerzymy projekt JAVA, z poprzedniego modulu. Aby ulatwic sobie prace skopiujemy projekt.
@@ -32,6 +32,7 @@ Teraz musimy skonfigurować uslugę Slacka (zostanie dla nas utworzony token dos
             -> dokończ konfigurację podążając za wskazówkami ze strony.
             -> pamiętaj aby kliknąć 'Save settings'
 
+Uwaga: instrukcja na Slacku mowi o konfiguracji Global Slack Notifier Settings, w najnowszej wersji Jenkinsa sekcja ta ma nazwę Slack. 
 Zainstaluj plugin (koniecznie z restartem)
 
         http://localhost:8080/pluginManager/ ->
