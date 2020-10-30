@@ -5,7 +5,7 @@ Describe "League tests" {
         . "$PSScriptRoot\app.ps1" -Force #import script1 with Force to re-load memory
     }
     Context "When teams play a game" {
-        bla bla
+ 
         It "should Legia win" {
             Select-Winner -Team1 "Legia" -Team2 "Widzew" | Should -be "Legia"
         }
